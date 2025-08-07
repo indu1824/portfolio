@@ -79,6 +79,6 @@ You can also find it in the **Resume** section on the portfolio site.
 - 🧠 Built using HTML, CSS, and JavaScript
 
 ## screenshots
-![Alt Text]()
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120117.png)
 
 
