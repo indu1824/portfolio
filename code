@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padala Indira Bhavani Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #2563eb;
+            --secondary-blue: #d6e5e9;
+            --accent-blue: #60a5fa;
+            --box-bg: rgba(20, 30, 60, 0.85);
+            --header-shadow: 0 4px 24px #2563eb99;
+            --text-shadow: 0 2px 8px #2563eb55;
+            --white: #f3f6fa;
+        }
+        body {
+            background: #000;
+            color: var(--primary-blue);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main-header {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-top: 0;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
+            text-shadow: var(--header-shadow);
+            padding-top: 2rem;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: var(--box-bg);
+            box-shadow: 0 2px 8px #000a;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+            text-shadow: var(--text-shadow);
+        }
+        .nav-link:hover {
+            color: var(--white);
+        }
+        .section {
+            max-width: 1100px;
+            margin: 3rem auto 0 auto;
+            padding: 2rem 1rem;
+        }
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 60vh;
+            margin-top: 2rem;
+        }
+        .profile-card {
+            background: var(--box-bg);
+            border-radius: 30px;
+            box-shadow: 0 8px 32px 0 #2563eb33;
+            padding: 1rem;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-blue);
+            margin-bottom: 1.2rem;
+            box-shadow: 0 4px 16px #2563eb55;
+        }
+        .profile-card h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 0.3rem;
+            text-shadow: var(--header-shadow);
+        }
+        .profile-card h2 {
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 1.1rem;
+            font-weight: 700;
+            text-shadow: var(--text-shadow);
+        }
+        .profile-card p {
+            font-size: 1.08rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .profile-links a {
+            color: var(--accent-blue);
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .profile-links a:hover {
+            color: var(--white);
+        }
+        .btn {
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 20px;
+            padding: 0.7rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0.5rem 0.5rem 0 0;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #2563eb55;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn:hover {
+            background: var(--accent-blue);
+            color: #000;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+            text-shadow: var(--header-shadow);
+        }
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill-card {
+            background: var(--box-bg);
+            border-radius: 18px;
+            padding: 1.2rem 0.5rem;
+            text-align: center;
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px #2563eb33;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-blue);
+        }
+        .skill-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 8px 24px #2563eb55;
+        }
+        /* Experience */
+        .timeline {
+            position: relative;
+            margin: 2rem 0 0 0;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary-blue), var(--accent-blue));
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding-left: 30px;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -2px;
+            top: 0.5rem;
+            width: 18px;
+            height: 18px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px #2563eb55;
+        }
+        .timeline-content {
+            background: var(--box-bg);
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            color: var(--white);
+            box-shadow: 0 2px 8px #2563eb33;
+        }
+        .timeline-content h3 {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            text-shadow: var(--text-shadow);
+        }
+        .timeline-content h4 {
+            color: var(--accent-blue);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .timeline-content p {
+            color: var(--white);
+            font-size: 1rem;
+        }
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: var(--box-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px #2563eb33;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 8px 32px #2563eb55;
+        }
+        .project-image {
+            width: 100%;
+            height: 180px;
+            background: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+        }
+        .project-title {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: var(--text-shadow);
+        }
+        .project-description {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .tech-tag {
+            background: var(--accent-blue);
+            color: #000;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+        .project-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .project-link:hover {
+            color: var(--accent-blue);
+        }
+        /* Achievements */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .achievement-card {
+            background: var(--box-bg);
+            border-radius: 20px;
+            box-shadow: 0 2px 8px #2563eb33;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            text-align: center;
+        }
+        .achievement-card img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1rem;
+        }
+        .achievement-title {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: var(--text-shadow);
+        }
+        .achievement-desc {
+            color: var(--white);
+            font-size: 1rem;
+        }
+        /* Certificates */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .certificate-card {
+            background: var(--box-bg);
+            border-radius: 20px;
+            box-shadow: 0 2px 8px #2563eb33;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            text-align: center;
+        }
+        .certificate-title {
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: var(--text-shadow);
+        }
+        .certificate-link {
+            display: inline-block;
+            margin-top: 0.7rem;
+            background: var(--accent-blue);
+            color: #000;
+            padding: 0.4rem 1.2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #2563eb33;
+            transition: background 0.2s, color 0.2s;
+        }
+        .certificate-link:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+        }
+        /* Footer */
+        .footer {
+            background: #111827;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            color: var(--accent-blue);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 600px) {
+            .main-header { font-size: 2rem; }
+            .section { padding: 1rem 0.2rem; }
+            .profile-card { padding: 1.2rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="#profile" class="nav-link">Profile</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="C:/Users/thanu/Downloads/thanuja_pepakayala_resume_java_dev[1] (2).pdf" class="nav-link" target="_blank">Resume</a>
+    </nav>
+    <section id="profile" class="profile-section section">
+        <div class="profile-card floating">
+            <img src="https://drive.google.com/uc?export=view&id=109W-67FhbAjFVXWOf9QyMZBQfwp2io7D" alt="Profile" class="profile-img">
+            <h1>Padala Indira Bhavani</h1>
+<h2>B.Tech (CSE Student) | Java Developer & Software Developer</h2>
+<p>
+  Motivated Computer Science undergraduate with strong skills in Java, Python, Data Structures.
+  Proven ability to develop and deploy responsive websites and practical tools. Quick learner with academic abilities and technical knowledge.
+</p>
+<div class="profile-links">
+  <a href="https://github.com/indu1824" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  <a href="https://www.linkedin.com/in/padala-indira" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  <a href="https://leetcode.com/indu_256" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
+  <a href="https://www.hackerrank.com/profile/indupadala256" target="_blank"><i class="fab fa-hackerrank"></i> HackerRank</a>
+  <a href="http://www.codechef.com/users/indu44" target="_blank"><i class="fas fa-code"></i> CodeChef</a>
+</div>
+<a href="https://drive.google.com/file/d/1NHrcHB7wB65zB_Cj6xKMJI8Vp8h0pJvP/view?usp=sharing" class="btn" target="_blank">Download Resume</a>
+
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="section-title">Skills</div>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-card"><i class="fab fa-python"></i> Python(Basic)</div>
+            <div class="skill-card"><i class="fas fa-database"></i> SQL (Basic)</div>
+            <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-card"><i class="fab fa-js-square"></i> JavaScript</div>
+            <div class="skill-card"><i class="fas fa-tools"></i> VS Code, Word, PowerPoint</div>
+            <div class="skill-card"><i class="fas fa-brain"></i> Data Structures & Algorithms</div>
+            <div class="skill-card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+            <div class="skill-card"><i class="fas fa-users"></i> Leadership, Teamwork</div>
+            <div class="skill-card"><i class="fas fa-clock"></i> Time Management</div>
+            <div class="skill-card"><i class="fas fa-comments"></i> Communication</div>
+        </div>
+    </section>
+    <section id="education" class="section">
+        <div class="section-title">Education</div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech (Computer Science & Engineering)</h3>
+                    <h4>Mohan Babu University, Tirupati | 2022-2026 | CGPA: 8.63 (current)</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Intermediate</h3>
+                    <h4>Tirumala Junior Mahila Kalasala, Rajahmundry, Andhra Pradesh | 2020-2022 | Score: 81.7%</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Secondary Education</h3>
+                    <h4>Tirumala High School, Katheru, Andhra Pradesh | Score: 99.99%</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="section-title">Projects</div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Forum Website"></div>
+                <div class="project-content">
+                    <div class="project-title">Online Travel Website</div>
+                    <div class="project-description"> Built a responsive travel booking website using HTML5, CSS3, and JavaScript. Features include destination search, interactive itineraries, image galleries, and client-side booking forms. </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Portfolio"></div>
+                <div class="project-content">
+                    <div class="project-title">Portfolio Website</div>
+                    <div class="project-description">Created a fully responsive portfolio showcasing personal projects, skills, and resume. <br>Technologies: HTML, CSS, JavaScript.</div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <a href="C:\Users\thanu\2026\portfolio.html"><span class="tech-tag">open project</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="section">
+  <div class="section-title">Achievements</div>
+  <div class="achievements-grid">
+
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Coordinator">
+      <div class="achievement-title">Student Coordinator</div>
+      <div class="achievement-desc">Selected as Student Coordinator for major tech events at Mohan Babu University.</div>
+    </div>
+
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3468/3468371.png" alt="Organizer">
+      <div class="achievement-title">Public Relations Event Organizer</div>
+      <div class="achievement-desc">Organizer for the Public Relations Event during the university campus fest.</div>
+    </div>
+
+    <div class="achievement-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode">
+      <div class="achievement-title">LeetCode</div>
+      <div class="achievement-desc">Solved 150+ Data Structures and Algorithms problems. Strengthened core problem-solving skills.</div>
+      <div><a href="https://leetcode.com/indu_256" target="_blank">Open</a></div>
+    </div>
+
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="HackerRank">
+      <div class="achievement-title">HackerRank Silver Badge</div>
+      <div class="achievement-desc">Earned Silver Badges in Java and Problem Solving on HackerRank.</div>
+      <div><a href="https://www.hackerrank.com/profile/indupadala256" target="_blank">Open</a></div>
+    </div>
+
+    <div class="achievement-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="Python NPTEL">
+      <div class="achievement-title">Python for Data Science – NPTEL</div>
+      <div class="achievement-desc">Completed NPTEL course during July–August 2024. Developed foundational skills in Python for Data Science.</div>
+      <div><a href="https://drive.google.com/file/d/1pQAqMKhT9gxHTolBYy48RkziNyV2VN9l/view?usp=sharing" target="_blank">View Certificate</a></div>
+    </div>
+
+  </div>
+</section>
+    <section id="certificates" class="section">
+  <div class="section-title">Certificates</div>
+  <div class="certificates-grid">
+
+    <div class="certificate-card">
+      <div class="certificate-title">Java (Basic) - HackerRank</div>
+      <a href="https://drive.google.com/file/d/1dzsHvorenDXOzOIgrRdtM3QtnM_M6a_n/view?usp=sharing" class="certificate-link" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-title">Free Java Course - GeeksforGeeks</div>
+      <a href="https://drive.google.com/file/d/1tt1oEnWf0MgVly-x0zav2DlZv1X_Kasz/view?usp=sharing" class="certificate-link" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-title">30 Days DSA Bootcamp – Unstop</div>
+      <a href="https://drive.google.com/file/d/1g59FulS5tQGnRxtBc7KFaZQ9a2aW8XkO/view?usp=sharing" class="certificate-link" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-title">Python Essentials & Cyber Security - Cisco Networking Academy</div>
+      <a href="" class="certificate-link" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <div class="certificate-title">Data Analysis using Python - Main Flow Services Pvt. Ltd</div>
+      <a href="https://drive.google.com/file/d/1bCUcpS8I6CSXwmLNqXtrZSWkLiUU8Trv/view?usp=sharing" class="certificate-link" target="_blank">View Certificate</a>
+    </div>
+
+  </div>
+</section>
+
+    <section id="contact" class="section">
+        <div class="section-title">Contact</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: flex-start;">
+            <div style="background: var(--box-bg); border-radius: 20px; max-width: 400px; flex: 1 1 300px; min-width: 260px; padding: 2rem; box-shadow: 0 2px 8px #2563eb33; margin-bottom: 1rem;">
+                <div style="color: var(--primary-blue); font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem;">Let's Connect</div>
+                <div style="margin-bottom: 1rem;"><i class="fas fa-envelope"></i> <span style="color: var(--white);">indupadala256@gmail.com/span></div>
+                <div style="margin-bottom: 1rem;"><i class="fas fa-phone"></i> <span style="color: var(--white);">+91 8247769682</span></div>
+                <div style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"></i> <span style="color: var(--white);">Tirupati, Andhra Pradesh, India</span></div>
+            </div>
+            <form id="messageForm" style="background: var(--box-bg); border-radius: 20px; max-width: 400px; flex: 1 1 300px; min-width: 260px; padding: 2rem; box-shadow: 0 2px 8px #2563eb33; margin-bottom: 1rem; color: var(--primary-blue);">
+                <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 1rem; color: var(--primary-blue);">Message Me</div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="msg-name" style="display:block; margin-bottom:0.3rem;">Name</label>
+                    <input id="msg-name" name="name" type="text" required style="width:100%; padding:0.5rem; border-radius:8px; border:1px solid var(--accent-blue); background:#111827; color:var(--primary-blue);">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="msg-phone" style="display:block; margin-bottom:0.3rem;">Phone Number</label>
+                    <input id="msg-phone" name="phone" type="tel" required style="width:100%; padding:0.5rem; border-radius:8px; border:1px solid var(--accent-blue); background:#111827; color:var(--primary-blue);">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="msg-email" style="display:block; margin-bottom:0.3rem;">Email</label>
+                    <input id="msg-email" name="email" type="email" required style="width:100%; padding:0.5rem; border-radius:8px; border:1px solid var(--accent-blue); background:#111827; color:var(--primary-blue);">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="msg-message" style="display:block; margin-bottom:0.3rem;">Message</label>
+                    <textarea id="msg-message" name="message" rows="4" required style="width:100%; padding:0.5rem; border-radius:8px; border:1px solid var(--accent-blue); background:#111827; color:var(--primary-blue);"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width:100%;">Send Message</button>
+            </form>
+        </div>
+        <script>
+        document.getElementById('messageForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        };
+        </script>
+    </section>
+    <footer class="footer">
+        &copy; 2024 Padala Indira Bhavani. All rights reserved.
+    </footer>
+</body>
+</html>
