@@ -80,5 +80,11 @@ You can also find it in the **Resume** section on the portfolio site.
 
 ## screenshots
 ![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120117.png)
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120144.png)
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120154.png)
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120208.png)
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120221.png)
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120233.png)
+![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120244.png)
 
 
