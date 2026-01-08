@@ -6,17 +6,20 @@ Welcome to the personal portfolio of **Padala Indira Bhavani**, a passionate **J
 
 ## 🙋‍♀️ About Me
 
-I am currently pursuing a **B.Tech in Computer Science and Engineering** at **Mohan Babu University** (CGPA: 8.63). I specialize in **Java**, **Data Structures and Algorithms**, and front-end web development. I'm constantly exploring new tools and solving complex problems through code.
+
+Computer Science undergraduate and aspiring Software Engineer with a strong foundation in Java, SQL, Object-Oriented Programming (OOP), and Data Structures & Algorithms. Experienced in developing Java-based applications and responsive web projects using HTML, CSS, and JavaScript. Motivated to build efficient, scalable software solutions in collaborative environments.
+
+
 
 ---
 
 ## 🧠 Tech Stack
 
-- **Languages**: Java, Python (Basic), C (Basic)
-- **Web**: HTML5, CSS3, JavaScript
+- **Programming Languages**: Java, Python (Basic), SQL
+- **Web Technologies**: HTML5, CSS3
 - **Tools**: GitHub, Visual Studio Code
-- **Core Areas**: DSA, Problem Solving, Responsive Web Design
-
+- **Core Areas**: DSA,OOP, DBMS
+- **Soft Skills**: Problem Solving, Time Management, Teamwork, Communication
 ---
 
 ## 🌐 Website Sections
@@ -45,14 +48,13 @@ You can also find it in the **Resume** section on the portfolio site.
 - **30 Days DSA Bootcamp** – Unstop
 - **Java Course** – GeeksforGeeks
 - **Java (Basic) Skill Certificate** – HackerRank
-- **Python for Data Science** – NPTEL
+
 
 ---
 
 ## 🚀 Achievements
-
+- Archived **Flipkart Grid 7.0 National Semi-Finalist**  
 - Solved **150+ DSA problems** on LeetCode  
-- Earned **Silver Badges** in Java and Problem Solving on HackerRank  
 - Selected as **Student Coordinator** for tech events  
 - Organized the **Public Relations Event** during university fests  
 
@@ -78,13 +80,6 @@ You can also find it in the **Resume** section on the portfolio site.
 - 📱 Mobile and desktop ready
 - 🧠 Built using HTML, CSS, and JavaScript
 
-## screenshots
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120117.png)
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120144.png)
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120154.png)
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120208.png)
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120221.png)
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120233.png)
-![Alt Text](https://github.com/indu1824/portfolio/blob/main/Screenshot%202025-08-07%20120244.png)
+
 
 
