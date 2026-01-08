@@ -64,7 +64,7 @@ Used Java Collections and File I/O for game data management.
 
 Tech Stack: Java, OOP, DSA, Collections, File I/O
 
-🔗 GitHub: https://github.com/indu1824/-Space-Invaders-Game-.git
+🔗 GitHub: https://github.com/indu1824/-Space-Invaders-Game-.git 
 
 
 ## 🏆 Certifications
