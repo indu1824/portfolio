@@ -24,12 +24,15 @@ Computer Science undergraduate and aspiring Software Engineer with a strong foun
 
 ## 🌐 Website Sections
 
-- **Home**: Animated welcome with name, role, and call-to-action buttons
-- **About**: Summary, skills, education, and goals
-- **Projects**: Featured projects like Travel Website and Portfolio
-- **Skills**: Technical and soft skills visualized
-- **Resume**: Downloadable PDF resume
-- **Contact**: Linked social profiles and contact form
+**The portfolio website includes the following sections**:
+Profile / About Me
+Skills
+Education
+Projects
+Achievements
+Certifications
+Contact Information
+Each section is structured to reflect my resume accurately and professionally.
 
 ---
 
@@ -40,6 +43,27 @@ Computer Science undergraduate and aspiring Software Engineer with a strong foun
 You can also find it in the **Resume** section on the portfolio site.
 
 ---
+💻 Projects
+🔹 Portfolio Website
+Designed and developed a fully responsive personal portfolio website.
+
+Showcases skills, education, projects, certifications, and achievements.
+
+Tech Stack: HTML, CSS, JavaScript
+
+🔗 GitHub: https://github.com/indu1824/portfolio.git
+
+🔹 Space Invaders Game (Java)
+Developed a console-based Space Invaders game using Java and OOP principles.
+
+Implemented player movement, enemy logic, scoring system, power-ups, and leaderboard.
+
+Used Java Collections and File I/O for game data management.
+
+Tech Stack: Java, OOP, DSA, Collections, File I/O
+
+🔗 GitHub: https://github.com/indu1824/-Space-Invaders-Game-.git
+
 
 ## 🏆 Certifications
 
