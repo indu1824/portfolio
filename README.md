@@ -35,7 +35,7 @@ Computer Science undergraduate and aspiring Software Engineer with a strong foun
 
 ## 📄 Resume
 
-📥 [Click here to download my resume (PDF)](./PADALA%20INDIRA%20BHAVANI_22102A040989.pdf)
+📥 [Click here to download my resume (PDF)](https://drive.google.com/file/d/1hn7kMkP_2ZatwoOFeXKjI7a6j-vPUI8p/view?usp=sharing)
 
 You can also find it in the **Resume** section on the portfolio site.
 
