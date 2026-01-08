@@ -393,7 +393,7 @@
         <a href="#achievements" class="nav-link">Achievements</a>
         <a href="#certificates" class="nav-link">Certificates</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <a href="C:/Users/thanu/Downloads/thanuja_pepakayala_resume_java_dev[1] (2).pdf" class="nav-link" target="_blank">Resume</a>
+        <a href="https://drive.google.com/file/d/1hn7kMkP_2ZatwoOFeXKjI7a6j-vPUI8p/view?usp=sharing" class="nav-link" target="_blank">Resume</a>
     </nav>
     <section id="profile" class="profile-section section">
         <div class="profile-card floating">
@@ -401,8 +401,9 @@
             <h1>Padala Indira Bhavani</h1>
 <h2>B.Tech (CSE Student) | Java Developer & Software Developer</h2>
 <p>
-  Motivated Computer Science undergraduate with strong skills in Java, Python, Data Structures.
-  Proven ability to develop and deploy responsive websites and practical tools. Quick learner with academic abilities and technical knowledge.
+  
+Computer Science undergraduate and aspiring Software Engineer with a strong foundation in Java, SQL, Object-Oriented Programming (OOP), and Data Structures & Algorithms. Experienced in developing Java-based applications and responsive web projects using HTML, CSS, and JavaScript. Motivated to build efficient, scalable software solutions in collaborative environments.
+
 </p>
 <div class="profile-links">
   <a href="https://github.com/indu1824" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -439,7 +440,7 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>B.Tech (Computer Science & Engineering)</h3>
-                    <h4>Mohan Babu University, Tirupati | 2022-2026 | CGPA: 8.63 (current)</h4>
+                    <h4>Mohan Babu University, Tirupati | 2022-2026 | CGPA: 8.74 (current)</h4>
                 </div>
             </div>
             <div class="timeline-item">
@@ -453,26 +454,32 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <h3>Secondary Education</h3>
-                    <h4>Tirumala High School, Katheru, Andhra Pradesh | Score: 99.99%</h4>
+                    <h4>Tirumala High School, Katheru, Andhra Pradesh | Score: 99.9%</h4>
                 </div>
             </div>
         </div>
     </section>
     <section id="projects" class="section">
-        <div class="section-title">Projects</div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Forum Website"></div>
-                <div class="project-content">
-                    <div class="project-title">Online Travel Website</div>
-                    <div class="project-description"> Built a responsive travel booking website using HTML5, CSS3, and JavaScript. Features include destination search, interactive itineraries, image galleries, and client-side booking forms. </div>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
+        <div class="project-card">
+  <div class="project-image">
+    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80">
+  </div>
+  <div class="project-content">
+    <div class="project-title">Space Invaders Game (Java)</div>
+    <div class="project-description">
+      Developed a console-based Space Invaders game using Java and OOP concepts. Implemented player movement, enemy logic, scoring system, power-ups, and leaderboard using File I/O and Collections.
+    </div>
+    <div class="project-tech">
+      <span class="tech-tag">Java</span>
+      <span class="tech-tag">OOP</span>
+      <span class="tech-tag">DSA</span>
+      <span class="tech-tag">File I/O</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/indu1824/-Space-Invaders-Game-.git" target="_blank" class="project-link">GitHub</a>
+    </div>
+  </div>
+</div>
             <div class="project-card">
                 <div class="project-image"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Portfolio"></div>
                 <div class="project-content">
@@ -491,6 +498,13 @@
     <section id="achievements" class="section">
   <div class="section-title">Achievements</div>
   <div class="achievements-grid">
+<div class="achievement-card">
+  <img src="https://drive.google.com/file/d/1-WDTSazfhrJwref7-9fda3Co868Za_PM/view?usp=sharing">
+  <div class="achievement-title">Flipkart Grid 7.0 Semi-Finalist</div>
+  <div class="achievement-desc">
+    National Semi-Finalist in Flipkart Grid 7.0, recognized for problem-solving and system design innovation.
+  </div>
+</div>
 
     <div class="achievement-card">
       <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Coordinator">
@@ -516,13 +530,6 @@
       <div class="achievement-title">HackerRank Silver Badge</div>
       <div class="achievement-desc">Earned Silver Badges in Java and Problem Solving on HackerRank.</div>
       <div><a href="https://www.hackerrank.com/profile/indupadala256" target="_blank">Open</a></div>
-    </div>
-
-    <div class="achievement-card">
-      <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="Python NPTEL">
-      <div class="achievement-title">Python for Data Science – NPTEL</div>
-      <div class="achievement-desc">Completed NPTEL course during July–August 2024. Developed foundational skills in Python for Data Science.</div>
-      <div><a href="https://drive.google.com/file/d/1pQAqMKhT9gxHTolBYy48RkziNyV2VN9l/view?usp=sharing" target="_blank">View Certificate</a></div>
     </div>
 
   </div>
