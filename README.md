@@ -20,6 +20,8 @@ Computer Science undergraduate and aspiring Software Engineer with a strong foun
 - **Tools**: GitHub, Visual Studio Code
 - **Core Areas**: DSA,OOP, DBMS
 - **Soft Skills**: Problem Solving, Time Management, Teamwork, Communication
+
+
 ---
 
 ## 🌐 Website Sections
