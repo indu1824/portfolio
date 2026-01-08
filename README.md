@@ -53,7 +53,8 @@ Showcases skills, education, projects, certifications, and achievements.
 
 Tech Stack: HTML, CSS, JavaScript
 
-🔗 GitHub: https://github.com/indu1824/portfolio.git
+💻 GitHub Repository: [View Code](https://github.com/indu1824/portfolio)
+
 
 🔹 Space Invaders Game (Java)
 Developed a console-based Space Invaders game using Java and OOP principles.
@@ -64,22 +65,22 @@ Used Java Collections and File I/O for game data management.
 
 Tech Stack: Java, OOP, DSA, Collections, File I/O
 
-🔗 GitHub: https://github.com/indu1824/-Space-Invaders-Game-.git 
+🔗 GitHub:[view Code](https://github.com/indu1824/-Space-Invaders-Game-.git)
 
 
 ## 🏆 Certifications
 
-- **Data Analysis using Python** – Main Flow Services (Jan–Mar 2025)
-- **Python Essentials & Cyber Security** – Cisco Networking Academy
-- **30 Days DSA Bootcamp** – Unstop
-- **Java Course** – GeeksforGeeks
-- **Java (Basic) Skill Certificate** – HackerRank
+- **Data Analysis using Python** – Main Flow Services (Jan–Mar 2025) [View](https://drive.google.com/file/d/1d1xS33XP8sc73pgfyu9zKd4gh4AWwEFq/view?usp=drive_link)
+- **Python Essentials & Cyber Security** – Cisco Networking Academy [View](https://drive.google.com/file/d/1GhyYBT04XLOn48q2H5Adb-24LN8C8gk_/view?usp=drive_link)
+- **30 Days DSA Bootcamp** – Unstop [View](https://drive.google.com/file/d/1g59FulS5tQGnRxtBc7KFaZQ9a2aW8XkO/view?usp=sharing)
+- **Java Course** – GeeksforGeeks [View](https://drive.google.com/file/d/1tt1oEnWf0MgVly-x0zav2DlZv1X_Kasz/view?usp=drive_link)
+- **Java (Basic) Skill Certificate** – HackerRank [View](https://drive.google.com/file/d/1dzsHvorenDXOzOIgrRdtM3QtnM_M6a_n/view?usp=drive_link)
 
 
 ---
 
 ## 🚀 Achievements
-- Archived **Flipkart Grid 7.0 National Semi-Finalist**  
+- Archived **Flipkart Grid 7.0 National Semi-Finalist**  [View](https://drive.google.com/file/d/1-WDTSazfhrJwref7-9fda3Co868Za_PM/view?usp=drive_link)
 - Solved **150+ DSA problems** on LeetCode  
 - Selected as **Student Coordinator** for tech events  
 - Organized the **Public Relations Event** during university fests  
